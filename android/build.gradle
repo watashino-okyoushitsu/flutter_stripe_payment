@@ -70,7 +70,15 @@ android {
 dependencies {
     api 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.70'
     implementation 'androidx.annotation:annotation:1.1.0'
-    implementation 'com.stripe:stripe-android:16.10.0'
+    implementation files(
+            '../aar/payments-release.aar',
+            '../aar/payments-core-release.aar',
+            '../aar/paymentsheet-release.aar',
+            '../aar/camera-core-release,aar',
+            '../aar/stripe-3ds2-android-5.3.1-runtime.jar',
+            '../aar/financial-connections-release.aar'
+    )
+    implementation 'com.airbnb.android:mavericks-rxjava2:2.7.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.google.android.gms:play-services-wallet:18.0.0'
 }
