@@ -74,7 +74,7 @@ dependencies {
             '../aar/payments-release.aar',
             '../aar/payments-core-release.aar',
             '../aar/paymentsheet-release.aar',
-            '../aar/camera-core-release,aar',
+            '../aar/camera-core-release.aar',
             '../aar/stripe-3ds2-android-5.3.1-runtime.jar',
             '../aar/financial-connections-release.aar'
     )
